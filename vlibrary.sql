@@ -33,7 +33,7 @@ CREATE TABLE `administrador` (
   PRIMARY KEY (`Id_admi`),
   KEY `Id_persona` (`Id_persona`),
   CONSTRAINT `administrador_ibfk_1` FOREIGN KEY (`Id_persona`) REFERENCES `persona` (`Id_persona`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `administrador` (
 
 LOCK TABLES `administrador` WRITE;
 /*!40000 ALTER TABLE `administrador` DISABLE KEYS */;
-INSERT INTO `administrador` VALUES (27,35,'7878','2021-12-16 08:57:12','2021-12-16 08:57:12');
+INSERT INTO `administrador` VALUES (27,35,'7878','2021-12-16 08:57:12','2021-12-16 08:57:12'),(28,37,'4236','2021-12-16 09:39:15','2021-12-16 09:39:15');
 /*!40000 ALTER TABLE `administrador` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,7 +127,7 @@ CREATE TABLE `persona` (
   PRIMARY KEY (`Id_persona`),
   KEY `Id_usuario` (`Id_usuario`),
   CONSTRAINT `persona_ibfk_1` FOREIGN KEY (`Id_usuario`) REFERENCES `usuario` (`Id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -136,7 +136,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES (35,110,'Manuel Valenzuela','Estudiante','2021-12-16 08:57:12','2021-12-16 08:57:12'),(36,111,'Rodrigo Viladegut','Estudiante','2021-12-16 08:57:44','2021-12-16 08:57:44');
+INSERT INTO `persona` VALUES (35,110,'Manuel Valenzuela','Estudiante','2021-12-16 08:57:12','2021-12-16 08:57:12'),(36,111,'Rodrigo Viladegut','Estudiante','2021-12-16 08:57:44','2021-12-16 08:57:44'),(37,112,'Luciano Paniagua','Estudiante','2021-12-16 09:39:14','2021-12-16 09:39:14');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,7 +156,7 @@ CREATE TABLE `usuario` (
   `Created` datetime DEFAULT NULL,
   `Updated` datetime DEFAULT NULL,
   PRIMARY KEY (`Id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -165,7 +165,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (110,'Manu2001','manu123','manli2001@hotmail.es','2021-12-16 08:58:34','2021-12-16 08:57:12','2021-12-16 08:57:12'),(111,'rotis','rotis123','rodri@gmail.com','2021-12-16 08:59:29','2021-12-16 08:57:44','2021-12-16 08:57:44');
+INSERT INTO `usuario` VALUES (110,'Manu2001','manu123','manli2001@hotmail.es','2021-12-16 22:37:55','2021-12-16 08:57:12','2021-12-16 08:57:12'),(111,'rotis','rotis123','rodri@gmail.com','2021-12-18 16:30:09','2021-12-16 08:57:44','2021-12-16 08:57:44'),(112,'Lucky','lucky123','luciano@gmail.com','2021-12-18 17:03:22','2021-12-16 09:39:14','2021-12-16 09:39:14');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -239,4 +239,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-16  9:11:50
+-- Dump completed on 2021-12-18 18:30:06
